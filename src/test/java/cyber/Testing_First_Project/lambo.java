@@ -1,9 +1,8 @@
-package Testing_First_Project;
+package cyber.Testing_First_Project;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import javax.naming.Name;
 import java.util.concurrent.TimeUnit;
 
 public class lambo {

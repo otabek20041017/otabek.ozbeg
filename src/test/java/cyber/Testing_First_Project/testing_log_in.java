@@ -1,4 +1,4 @@
-package Testing_First_Project;
+package cyber.Testing_First_Project;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -14,7 +14,8 @@ import java.util.concurrent.TimeUnit;
 
 
 public class testing_log_in {
-        WebDriver driver;
+
+    WebDriver driver;
 
         @BeforeMethod
                 public void setUpMethod() throws Exception {
@@ -35,7 +36,7 @@ public class testing_log_in {
              driver.findElement(By.xpath("//*[@id='password']")).sendKeys("Password123");
              String expectedWebSiteTitle = driver.getTitle();
              String actualWebSiteTitle = "Test Login | Practice Test Automation";
-             Assert.assertEquals(expectedWebSiteTitle, actualWebSiteTitle);
+             Assert.assertEquals(expectedWebSiteTitle, actualWebSiteTitle, "TITLE DIDN'T MATCH");
              Thread.sleep(3000);
              WebElement submitBtn = driver.findElement(By.xpath("//*[@id='submit']"));
              String submitExpectationText = submitBtn.getText();
