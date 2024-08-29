@@ -13,7 +13,9 @@ import io.cucumber.junit.CucumberOptions;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
-        glue = "cyber/step_definitions"
+        glue = "cyber/step_definitions",
+        tags = "@azizbek"
+
 
 )
 
