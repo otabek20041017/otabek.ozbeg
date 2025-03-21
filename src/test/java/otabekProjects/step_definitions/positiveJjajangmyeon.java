@@ -1,4 +1,4 @@
-package cyber.step_definitions;
+package otabekProjects.step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

@@ -1,4 +1,4 @@
-package cyber.Testing_First_Project;
+package otabekProjects.Testing_First_Project;
 
 
 import org.openqa.selenium.By;
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class dell {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
         WebDriver driver = new ChromeDriver();
 
@@ -34,14 +34,19 @@ public class dell {
         //Thread.sleep(4000);
 
         //driver.navigate().to("https://www.dell.com/en-us/shop/dell-computer-laptops/scr/laptops");
+
         driver.navigate().to("https://www.dell.com/en-us/shop/dell-computer-laptops/scr/laptops");
 
         WebElement modelName1 = driver.findElement(By.xpath("//*[*='XPS 13 Laptop']"));
+
         String firstLaptop = modelName1.getText();
+
         System.out.println("Laptop Model Name = " + firstLaptop);
 
        WebElement priceLaptop1 = driver.findElement(By.xpath("(//*[*='$1,299.99'])[1]"));
+
        String converting = priceLaptop1.getText().substring(13).replace(',', '.');
+
        try {
             double price1 = DecimalFormat.getNumberInstance().parse(converting).doubleValue();
             System.out.println("Laptop's Price: $" + price1);

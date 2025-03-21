@@ -1,4 +1,4 @@
-package cyber.Testing_First_Project;
+package otabekProjects.Testing_First_Project;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -18,7 +18,7 @@ public class testing_log_in {
     WebDriver driver;
 
         @BeforeMethod
-                public void setUpMethod() throws Exception {
+        public void setUpMethod() throws Exception {
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().window().maximize();

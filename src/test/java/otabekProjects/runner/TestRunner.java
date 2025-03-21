@@ -1,4 +1,4 @@
-package cyber.runner;
+package otabekProjects.runner;
 
 import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
-        glue = "cyber/step_definitions",
+        glue = "otabekProjects/step_definitions",
         tags = "@azizbek"
 
 
